@@ -1,6 +1,5 @@
 
-<style>
-{
+* {
     margin: 0;
     font-family: arial;
 }
@@ -45,18 +44,10 @@ section td{
     min-width: 30px;
     text-align: center;
 }
-   }
         a:hover{
             color:#000000;
         }
 
-
-</head>
-
-<body>
-   
-</body>
-</html>
 
 
 
