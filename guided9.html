@@ -20,7 +20,7 @@
             -ms-transform: skewx(-20deg);
             -moz-transform:skewx(-20deg);
                 -webkit-transform: skewx(-20deg);
-            -o-transform: skewx(-20deg);
+            -o-transform: skewx(=20deg);
             
             -ms-transition: all 5s ease-in;
             -webkit-transition: all 5s ease-in;
@@ -37,7 +37,12 @@
             -moz-transform: scale (2);
             -webkit-transform: scale (2);
             -o-transform: scale (2);
-            transition-duration: 3s;
+            
+              -ms-transition: all 4s ease-in;
+            -webkit-transition: all 4s ease-in;
+            -moz-transition: all 4s ease-in;
+            -o-transition: all 4s ease-in;
+            
         }
         .div3{
             width: 100px;
@@ -45,13 +50,15 @@
             background-color: #FF9B42;
             margin: auto;
             margin-top: 100px;
-            border-radius: 50%;
+            border-radius: 50px;
+          
         }
         .div3:hover{
             -ms-transform: rotate(360deg);
             -moz-transform: rotate(360deg);
             -webkit-transform: rotate(360deg);
             -o-transform: rotate(360deg);
+                    
             
             -ms-transition: all 1s ease-in;
             -webkit-transition: all 1s ease-in;
