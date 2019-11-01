@@ -52,10 +52,46 @@
     transition: all .2s ease-in;
 }
 .content-title{
-  font-family: 'Anton' sans-serif;
+  font-family: 'Anton', sans-serif;
     font-size: 50px;
     color: white;
     text-decoration: none;
+    
+}
+header{
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+.hello-text{
+  height: 100vh;  
+ position: relative;
+ animation-name: leftThenright;
+    animation-duration: 3s;
+  
+}
+    
+.name-text{
+   height: 100vh;
+     position: relative;
+   animation-name: leftThenright;
+    animation-duration: 3s;
+    
+  
+}
+@keyframes leftThenright{
+    0% {
+        right:-500%;
+
+    }
+    50%{
+        right: -300%;
+      
+    }
+    100%{
+        right:0%; 
+        
+    }
 }
 
 .img1{
