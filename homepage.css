@@ -1,0 +1,123 @@
+.main-container{
+    overflow: hidden;
+}
+
+*:any-link{
+    text-decoration: none;
+}
+
+.content-wrapper{
+    width: 100%;
+    max-width: 900px;
+   margin: auto;
+}
+
+.content-text{
+    margin-top: 5px;
+   
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+   font-family: 'Anton', sans-serif;
+   
+}
+.content-container{
+    height: 100vh;
+    width: 100%;
+}
+.content-card{
+    width: 280px;
+    height: 330px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    z-index: 1;
+    background-color: grey;
+    float: left;
+   
+}
+
+.content-card img{
+    width: 200px;
+    height: 200px;
+}
+
+.content-card:hover{
+    transform: scale(1.05);
+    transition: all .2s ease-in;
+}
+.content-card:not(hover){
+ transform: scale(1);
+    transition: all .2s ease-in;
+}
+.content-title{
+  font-family: 'Anton' sans-serif;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.img1{
+    width: 250px;
+   margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.img2{
+    width: 250px;
+   margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.img3{
+    width: 250px;
+   margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}.img4{
+    width: 250px;
+   margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}.img5{
+    width: 250px;
+   margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}.img6{
+    width: 250px;
+   margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}.img7{
+    width: 250px;
+   margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}.img8{
+    width: 250px;
+   margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}.img9{
+    width: 250px;
+   margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}.img10{
+    width: 250px;
+   margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}.img11{
+    width: 250px;
+   margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}.img12{
+    width: 250px;
+   margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
