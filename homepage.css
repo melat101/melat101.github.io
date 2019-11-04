@@ -62,17 +62,17 @@ header{
     font-family: 'Anton', sans-serif;
     font-size: 50px;
     color: white;
+     height: 100vh;
 }
 .hello-text{
-  height: 100vh;  
  position: relative;
  animation-name: leftThenright;
     animation-duration: 3s;
   
+  
 }
     
 .name-text{
-   height: 100vh;
      position: relative;
    animation-name: leftThenright;
     animation-duration: 3s;
