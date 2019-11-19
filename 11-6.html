@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .grass{
+            background-color: #DEFDE0;
+        }
+   
+        .fire{
+            background-color: #FDDFDF;
+        }
+       
+        .electric{
+            background-color: #FCF7DE;
+        }
+   
+        .water{
+            background-color: #DEF3FD;
+        }
+       
+        .ground{
+            background-color: #f4e7da;
+        }
+       
+        .rock{
+            background-color: #d5d5d4;
+        }
+       
+        .poison{
+            background-color: #b19cd9;
+        }
+   
+        .bug{
+            background-color: #f8d5a3;
+        }
+       
+        .dragon{
+            background-color: #97b3e6;
+        }
+       
+        .psychic{
+            background-color: #eaeda1;
+        }
+   
+        .flying{
+            background-color: #F5F5F5;
+        }    
+   
+        .fighting{
+            background-color: #E6E0D4;
+        }
+       
+        .normal{
+            background-color: #F5F5F5;
+        }
+       
+        .ice{
+            background-color: #66ccff;
+        }
+   
+        .name{
+            font-size: 15px;
+            font-weight: bold;
+        }
+    
+       
+       
+        .pokemon-card{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 212px;
+            width: 120px;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+       
+           
+        }
+       
+        .img-contaner{
+            margin-top: 30px;
+            background-color: rgba(255,255,255,0.6);
+               
+        }
+     
+        .number{
+            font-size: 5px rgba(0,0,0,0.1);
+            padding: 5px, 10px, 5px, 10px;
+        }
+       
+       
+        section{
+            display: flex;
+            flex-wrap: wrap;
+        }
+       
+        #img{
+            width: 150px;
+        }
+       
+        #grass{
+            background-color: #DEFDE0;
+        }
+       
+        #fire{
+            background-color: #FDDFDF
+        }
+       
+        #water{
+            background-color: #DEF3FD
+        }
+       
+        #poison{
+            background-color: #b19cd9;
+        }
+       
+        #electric{
+            background-color: #FCF7DE;
+        }
+   
+        #ground{
+            background-color: #f4e7da;
+        }
+       
+         #rock{
+            background-color: #d5d5d4;
+        }
+       
+         #bug{
+            background-color: #f8d5a3;
+        }
+       
+           #dragon{
+            background-color: #97b3e6;
+        }
+       
+         #psychic{
+            background-color: #eaeda1;
+        }
+       
+        #flying{
+            background-color: #F5F5F5;
+        }    
+       
+        #fighting{
+            background-color: #E6E0D4;
+        }
+       
+         #normal{
+            background-color: #F5F5F5;
+        }
+       
+          #ice{
+            background-color: #66ccff;
+        }
+   
+       
+        body > div{
+            max-width: 300px;
+            margin: auto;
+        }
+       
+        ::placeholder{
+            color: white;
+        }
+       
+        #searchinput {
+            width: 100%;
+            padding: 10px 5px 10px 5px;
+            border: none;
+            background-color: rgba(0,0,0,0.2);
+            color: white;
+            font-family: 'roboto';
+            font-size: 15px;
+        }
+    </style>        
+      
+   
+   
+    <script>
+    function filterResults(){
+        let inputElement = document.getElementbyId("searchInput");
+        let searchValue = inputElement.value.toUpperCase();
+       
+        let pokemon = document.getElmentsByClassName("pokemon-card");
+       
+       
+        for(i = 0; i < pokemon.length; i++){
+            let pokeText = pokemon[i].textContent;
+           
+            if(poketext.toUpperCase().indexOf(searchValue) > -1) {
+                pokemon[i].style.display="";
+   
+        }
+           
+            else{
+                pokemon[i].style.display = :"none";
+            }
+           
+        }
+    }
+    </script>
+
+   
+   
+   
+</head>
+
+<body style="background-color:lightcoral">
+
+ <h1>Pokemon Search</h1>  
+   
+  <div>
+   <input type="text" id="searchInput" onkeyup="filterResults()" placeholder="Search for Pokemon name or type">
+   
+</div>  
+   
+   <section>
+    <div class="pokemon-card" id="grass">
+        <div class="img-container">
+        <img src="../melat101.github.io/1-bulbasaur-grass.png" id="img">
+       </div>
+   
+        <div class="number">
+        #001
+        </div>
+     <div class="name">
+         Bulbasaur
+        </div>
+        <div class="type">
+            Grass
+        </div>
+       </div>
+       
+       
+       
+   
+    <div class="pokemon-card" id="grass">
+        <div class="img-container">
+        <img src="../melat101.github.io/2-ivsaur-grass.png" id="img">
+       </div>
+   
+        <div class="number">
+        #002
+        </div>
+     <div class="name">
+         Ivysaur
+        </div>
+        <div class="type">
+            Grass
+        </div>
+       </div>
+         
+       
+         
+   
+    <div class="pokemon-card" id="grass">
+        <div class="img-container">
+        <img src="../melat101.github.io/3-venusaur-grass.png" id="img">
+       </div>
+   
+        <div class="number">
+        #003
+        </div>
+     <div class="name">
+         Venusaur
+        </div>
+        <div class="type">
+            Grass
+        </div>
+       </div>
+       
+         
+   
+    <div class="pokemon-card" id="fire">
+        <div class="img-container">
+        <img src="../melat101.github.io/4-charmander-fire.png" id="img">
+       </div>
+   
+        <div class="number">
+        #004
+        </div>
+     <div class="name">
+         Charmander
+        </div>
+        <div class="type">
+            Fire
+        </div>
+       </div>
+       
+       
+       
+       
+        <div class="pokemon-card" id="fire">
+        <div class="img-container">
+        <img src="../melat101.github.io/5-charmeleon-fire.png" id="img">
+       </div>
+   
+        <div class="number">
+        #005
+        </div>
+     <div class="name">
+         Charmeleon
+        </div>
+        <div class="type">
+            Fire
+        </div>
+       </div>
+       
+         
+   
+    <div class="pokemon-card" id="fire">
+        <div class="img-container">
+        <img src="../melat101.github.io/6-charizard-fire.png" id="img">
+       </div>
+   
+        <div class="number">
+        #006
+        </div>
+     <div class="name">
+         Charizard
+        </div>
+        <div class="type">
+            Fire
+        </div>
+       </div>
+       
+             
+   
+    <div class="pokemon-card" id="water">
+        <div class="img-container">
+        <img src="../melat101.github.io/7-squirtle-water.png" id="img">
+       </div>
+   
+        <div class="number">
+        #007
+        </div>
+     <div class="name">
+         Squirtle
+        </div>
+        <div class="type">
+            Water
+        </div>
+       </div>
+       
+           
+   
+    <div class="pokemon-card" id="water">
+        <div class="img-container">
+        <img src="../melat101.github.io/8-wartortle-water.png" id="img">
+       </div>
+   
+        <div class="number">
+        #008
+        </div>
+     <div class="name">
+         Wartortle
+        </div>
+        <div class="type">
+            Water
+        </div>
+       </div>
+       
+             
+   
+    <div class="pokemon-card" id="water">
+        <div class="img-container">
+        <img src="../melat101.github.io/9-bastoise-water.png" id="img">
+       </div>
+   
+        <div class="number">
+        #009
+        </div>
+     <div class="name">
+         Blastoise
+        </div>
+        <div class="type">
+            Water
+        </div>
+       </div>
+       
+             
+   
+    <div class="pokemon-card" id="poison">
+        <div class="img-container">
+        <img src="../melat101.github.io/49-venomoth-poison.png" id="img">
+       </div>
+   
+        <div class="number">
+        #049
+        </div>
+     <div class="name">
+         Venemoth
+        </div>
+        <div class="type">
+            Poison
+        </div>
+       </div>
+       
+ 
+       
+    <div class="pokemon-card" id="electric">
+        <div class="img-container">
+        <img src="../melat101.github.io/135-jolteon-electric.png" id="img">
+       </div>
+   
+        <div class="number">
+        #135
+        </div>
+     <div class="name">
+         Jolteon
+        </div>
+        <div class="type">
+            Electric
+        </div>
+       </div>
+       
+         
+    <div class="pokemon-card" id="ground">
+        <div class="img-container">
+        <img src="../melat101.github.io/28-sandslash-ground.png" id="img">
+       </div>
+   
+        <div class="number">
+        #028
+        </div>
+     <div class="name">
+         Sandslash
+        </div>
+        <div class="type">
+            Ground
+        </div>
+       </div>
+     
+             
+         
+    <div class="pokemon-card" id="rock">
+        <div class="img-container">
+        <img src="../melat101.github.io/142-aerodactyl-rock.png" id="img">
+       </div>
+   
+        <div class="number">
+        #142
+        </div>
+     <div class="name">
+         Aerodactyl
+        </div>
+        <div class="type">
+            Rock
+        </div>
+       </div>
+             
+             
+         
+    <div class="pokemon-card" id="bug">
+        <div class="img-container">
+        <img src="../melat101.github.io/123-scyther-bug.png" id="img">
+       </div>
+   
+        <div class="number">
+        #123
+        </div>
+     <div class="name">
+         Scyther
+        </div>
+        <div class="type">
+            Bug
+        </div>
+       </div>    
+             
+       
+         <div class="pokemon-card" id="dragon">
+        <div class="img-container">
+        <img src="../melat101.github.io/149-dragonite-dragon.png" id="img">
+       </div>
+   
+        <div class="number">
+        #149
+        </div>
+     <div class="name">
+         Dragonite
+        </div>
+        <div class="type">
+            Dragon
+        </div>
+       </div>  
+       
+       
+         <div class="pokemon-card" id="psychic">
+        <div class="img-container">
+        <img src="../melat101.github.io/150-mewtwo-psychic.png" id="img">
+       </div>
+   
+        <div class="number">
+        #150
+        </div>
+     <div class="name">
+         Mewtwo
+        </div>
+        <div class="type">
+            Psychic
+        </div>
+       </div>  
+       
+        <div class="pokemon-card" id="flying">
+        <div class="img-container">
+        <img src="../melat101.github.io/18-pidgeot-flying.png" id="img">
+       </div>
+   
+        <div class="number">
+        #018
+        </div>
+     <div class="name">
+         Pidgeot
+        </div>
+        <div class="type">
+            Flying
+        </div>
+       </div>    
+       
+       <div class="pokemon-card" id="fighting">
+        <div class="img-container">
+        <img src="../melat101.github.io/107-hitmonchan-fighting.png" id="img">
+       </div>
+   
+        <div class="number">
+        #107
+        </div>
+     <div class="name">
+         Hitmonchan
+        </div>
+        <div class="type">
+            Fighting
+        </div>
+       </div>    
+       
+       
+    <div class="pokemon-card" id="normal">
+        <div class="img-container">
+        <img src="../melat101.github.io/133-eevee-normal.png" id="img">
+       </div>
+   
+        <div class="number">
+        #133
+        </div>
+     <div class="name">
+         Eevee
+        </div>
+        <div class="type">
+          Normal
+        </div>
+       </div>    
+       
+       
+       
+         <div class="pokemon-card" id="ice">
+        <div class="img-container">
+        <img src="../melat101.github.io/144-articuno-ice.png" id="img">
+       </div>
+
+        <div class="number">
+        #144
+        </div>
+     <div class="name">
+         Articuno
+        </div>
+        <div class="type">
+          Ice
+        </div>
+       </div>    
+       
+    </section>
+   
+   
+   
+   
+   
+</body>
+</html>
+
