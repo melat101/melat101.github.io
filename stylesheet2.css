@@ -4,7 +4,7 @@ body{
 background: white;
     
 }
-nav{
+.topnav{
     width: 100%;
     background: black;
     overflow: auto;
@@ -14,7 +14,7 @@ ul{
     margin:0 0 0 150px;
     list-style: none;
 }
-li{
+#toptext{
     float: right;
     margin-top: 10px;
     margin-bottom: 7px;
@@ -29,21 +29,70 @@ nav a{
     text-align: center;
     justify-content: flex-end;
 }
-img{
+#flag{
     width: 20px;}
-div{
+#toptext{
     color: white;
     display: flex;
     justify-content:flex-end; 
+   
 
 }
-p{
+#first{
     float: left;
     margin-top: 7px;
     margin-bottom: 7px;
+    display: flex;
+    justify-content: center;
+    color: white;
 
 }
-.logo{
-    width: px;
-    height: 100px:
+#logo{
+    width: 10px;
+    height: 100px;
+    float: left;
+    
+}
+.bottomnav{
+    background: white;
+}
+#bottomtext{
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+table{
+text-align: center;
+    max-width: 400px;
+    width: 100%;
+    line-height: 5em;
+     
+}
+.top{
+    display: flex;
+    justify-content: center;
+}
+.middle{
+    display: flex;
+    justify-content: flex-end;
+}
+.middleend{
+    display: flex;
+    justify-content: flex-end;
+}
+#paragragh{
+    color: #989898;
+    font-size: 14px;
+    margin: 0;
+    margin: 0px 0px 16px;
+}
+#video{
+    display: inline-block;
+}
+#bottomtextt{
+      display: flex;
+    justify-content: center;
+}
 }
