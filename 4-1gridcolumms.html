@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <title></title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap);
+        
+        body{
+            max-width: 900px;
+            width: 100%;
+            margin: auto;
+           font-family: 'Bebas Neue', cursive;
+            letter-spacing: 3px;
+            background-color: #525252;
+        }
+        .container{
+            width: 100%;
+            background: linear-gradient(90deg, rgba(250, 163, 229, 1) 11%, rgba (69, 232, 252, 1) 100%);
+            border-radius: 20px;
+            display: grid;
+            grid-gap: 0;
+            padding: 20px 0 20px 0;
+            overflow: hidden;
+        }
+        .item{
+            background-color: rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border-radius: 10px;
+        }
+        .one{
+            grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+           display: flex;
+            justify-content: flex-end;
+        }
+        .item{
+            width: 100px;
+        }
+        .three{
+            grid-template-columns: 10% 10% 10% 10% 10% 10%;
+        }
+        .five{
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        .six{
+            grid-template-columns: 1fr 2fr 6fr 1fr 1fr 1fr;
+        }
+        .eight{
+            grid-template-columns: repeat(6,10%);
+        }
+        .nine{
+            grid-template-columns: repeat(3, 1fr 2fr);
+        }
+        .ten{
+            grid-template-columns: repeat(3,10%) repeat(3,1fr);
+        }
+   
+    </style>
+</head>
+
+<body>
+    <h1> 1. Fixed Width - 100px</h1>
+    
+    <section class="one">
+    
+    <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+        
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+        
+        
+    <div class="item">100px</div>
+    </section>
+    
+    
+    
+    <h1> 2. Fixed Width - Different Sizes</h1>
+    
+    <section class="two">
+    
+    <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+        
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+        
+        
+    <div class="item">100px</div>
+    </section>
+    
+    
+    
+     <h1> 3. Flexible Width - Percentages</h1>
+    
+    <section class="three">
+    
+    <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+        
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+        
+        
+    <div class="item">100px</div>
+    </section>
+    
+    
+     <h1> 4. Flexible Width - Different Percentages</h1>
+    
+    <section class="four">
+    
+    <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+        
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+        
+        
+    <div class="item">100px</div>
+    </section>
+    
+    
+    
+     <h1> 5. Flexible Width- FR - (Fractions of Avaiable Space)</h1>
+    
+    <section class="five">
+    
+    <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+        
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+        
+        
+    <div class="item">100px</div>
+    </section>
+    
+    
+    
+    <h1> 6. Flexible Width- FR - (Fractions of Avaiable Space)</h1>
+    
+    <section class="six">
+    
+    <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+        
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+        
+        
+    <div class="item">100px</div>
+    </section>
+    
+    
+    
+       <h1> 7. Combined - Fixed With Flexible Columns </h1>
+    
+    <section class="seven">
+    
+    <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+        
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+        
+        
+    <div class="item">100px</div>
+    </section>
+    
+    
+    
+       <h1> 8. Repeat{6,10%}</h1>
+    
+    <section class="eight">
+    
+    <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+        
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+        
+        
+    <div class="item">100px</div>
+    </section>
+    
+    
+    
+       <h1> 9. Alternating Width Using Repeat</h1>
+    
+    <section class="nine">
+    
+    <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+        
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+        
+        
+    <div class="item">100px</div>
+    </section>
+    
+    
+    
+       <h1> 10. Using Muiltple Repeats</h1>
+    
+    <section class="ten">
+    
+    <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+    
+        
+      <div class="item">100px</div>
+    
+    
+      <div class="item">100px</div>
+        
+        
+    <div class="item">100px</div>
+    </section>
+</body>
+</html>
