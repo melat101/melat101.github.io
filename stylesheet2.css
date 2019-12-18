@@ -7,30 +7,29 @@ background: white;
 .topnav{
     width: 100%;
     background: black;
-    overflow: auto;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    
 }
-ul{
-    padding: 0;
-    margin:0 0 0 150px;
-    list-style: none;
+p{
+    color: white;
+    font-size: 70%;
+    align-content: center;
+    margin: 0;
 }
+.topp{
+    display: flex;
+    justify-content: flex-start;
+}
+
 #toptext{
     float: right;
     margin-top: 10px;
     margin-bottom: 7px;
 }
-nav a{
-    width: 100px;
-    display: flex;
-    padding: 10px px;
-    text-decoration: none;
-    font-family: serif;
-    color: white;
-    text-align: center;
-    justify-content: flex-end;
-}
-#flag{
-    width: 20px;}
+
+
 #toptext{
     color: white;
     display: flex;
@@ -38,14 +37,47 @@ nav a{
    
 
 }
-#first{
-    float: left;
-    margin-top: 7px;
-    margin-bottom: 7px;
+.top{
     display: flex;
-    justify-content: center;
-    color: white;
-
+    justify-content: space-between;
+}
+.featured{
+    font-size: 40px;
+    margin-left: 55px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+.season{
+    font-size: 40px;
+    margin-left: 55px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+.fans{
+    font-size: 40px;
+    margin-left: 55px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+.best{
+    font-size: 40px;
+    margin-left: 55px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+.wins{
+    font-size: 40px;
+    margin-left: 55px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+.bigwins{
+  margin-left: 55px;
+}
+niketop{
+    display: flex;
+    justify-content: flex-start;
+}
 }
 #logo{
     width: 10px;
@@ -55,10 +87,11 @@ nav a{
 }
 .bottomnav{
     background: white;
+    height: 80px;
 }
 #bottomtext{
     color: black;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -68,31 +101,5 @@ text-align: center;
     max-width: 400px;
     width: 100%;
     line-height: 5em;
-     
-}
-.top{
-    display: flex;
-    justify-content: center;
-}
-.middle{
-    display: flex;
-    justify-content: flex-end;
-}
-.middleend{
-    display: flex;
-    justify-content: flex-end;
-}
-#paragragh{
-    color: #989898;
-    font-size: 14px;
-    margin: 0;
-    margin: 0px 0px 16px;
-}
-#video{
-    display: inline-block;
-}
-#bottomtextt{
-      display: flex;
-    justify-content: center;
-}
+
 }
